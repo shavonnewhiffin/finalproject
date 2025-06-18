@@ -440,6 +440,16 @@ li {
 
 /* VALUES */
 
+.value__img--wrapper {
+    width: 36px;
+    height: 36px;
+    background-color: #9ae6b4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .value__img--wrapper-2{
     width: 36px;
     height: 36px;
