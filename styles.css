@@ -99,6 +99,10 @@ img {
   line-height: 1.625;
 }
 
+section {
+    padding: 0 32px;
+}
+
 /* NAV */
 
 .nav {
@@ -1286,6 +1290,8 @@ footer {
   .features {
     display: flex;
     justify-content: center;
+    align-items: center;
+    max-width: 768px;
   }
 
   .feature__row {
@@ -1294,13 +1300,18 @@ footer {
   }
 
   .feature {
-    width: 50%;
+    width: calc(50%);
   }
 
   /* QUALITY */
 
   #quality .section__title {
-    font-size: 48px;
+    font-size: 36px;
+
+ .quality__img--wrapper {
+    width: 403px;
+    height: 258px;
+    }
   }
 }
 
