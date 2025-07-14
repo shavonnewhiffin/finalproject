@@ -316,8 +316,8 @@ header {
   width: 100%;
   border-radius: 500px;
   border: 2px solid rgb(229, 231, 235);
+  color: rgb(229, 231, 235);
   padding: 20px 192px 20px 32px;
-  color: rgb(36, 62, 99);
   font-size: 16px;
   font-weight: 500;
   position: absolute;
@@ -1391,11 +1391,131 @@ footer {
     margin-top: 24px;
     padding: 15px 20px;
 }
-
 }
   
 
 
-/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */ 
+@media (max-width: 768px) {
+.section__para {
+    font-size: 14px;
+}
+
+.section__title, .section__para {
+    text-align: center;
+}
+
+.steps__img--wrapper, .steps__description, .quality__description, .quality__img--wrapper, .values__description, .values__img--wrapper, .testimonials__description, .testimonials__img {
+    width: 100%;
+    max-width: 448px;
+}
+
+.quality__description, .steps__description, .values__description {
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+
+/* FEATURES */
+    #features .section__title {
+        margin: 16px;
+    }
+
+    .features {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 384px;
+    }
+
+    .feature__row {
+        display: flex;
+        align-items: flex-start;
+    }
+
+/* QUALITY */
+
+#quality .row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.quality__description {
+    margin-top: 48px;
+
+}
+
+
+
+/* STEPS */
+
+#steps .row {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps__img--wrapper {
+    display: flex;
+    margin: 0 auto;
+}
+
+.steps__img {
+    width: 100%;
+}
+
+#steps .section__tag {
+    margin-top: 62px;
+    text-align: center;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.step__title {
+    margin-top: 12px;
+}
+
+/* VALUES */
+
+#values .row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#values .section__title {
+    text-align: center;
+    }
+
+.values__list {
+    max-width: 320px;
+}
+
+    .value {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
 
 /* SMALL PHONES, LARGE SMARTPHONES */
