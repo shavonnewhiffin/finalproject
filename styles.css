@@ -88,7 +88,7 @@ img {
   font-weight: 900;
   color: rgb(36, 62, 99);
   line-height: 1.5;
-  margin: 16px 0 24px;
+  margin: 16px 0px 16px 0px;;
   letter-spacing: 1.2px;
 }
 
@@ -300,6 +300,7 @@ header {
 .header__image {
   width: 100%;
   position: relative;
+  padding-left: 64px;
 }
 
 .header__email {
@@ -326,6 +327,8 @@ header {
   z-index: 1;
   transition: border-color 300ms;
 }
+
+::placeholder {color:rgba(160, 174, 192);}
 
 .header__email--input:hover {
   border-color: rgba(160, 174, 192);
@@ -367,7 +370,7 @@ header {
 .customers__img {
   margin-top: 16px;
   opacity: 0.5;
-  padding-right: 64px;
+  width: auto;
 }
 
 /* SVG Blob */
@@ -434,6 +437,7 @@ header {
   color: rgb(124, 139, 161);
   line-height: 2;
   font-weight: 500;
+  max-width: none;
 }
 
 /* SVG Blob */
@@ -476,6 +480,7 @@ header {
   margin: 0 56px;
   position: relative;
   z-index: 2;
+  display:flex;
 }
 
 .quality__img {
@@ -863,6 +868,7 @@ position: relative;
   width: 256px;
   height: 256px;
   opacity: 0.25;
+  transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
 }
 
 /* TESTIMONIALS */
@@ -1244,7 +1250,7 @@ footer {
 
 /* SMALL DESKTOPS */
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   h1 {
     font-size: 30px;
   }
@@ -1264,6 +1270,9 @@ footer {
   .btn__menu {
     display: block;
   }
+
+  /* LANDING */
+
   .header__row {
     display: flex;
     flex-direction: column;
@@ -1293,6 +1302,21 @@ footer {
     width: 100%;
     max-width: 512px;
     margin-top: 48px;
+  }
+
+  .header__image {
+    padding-left: 0;
+  }
+
+  /* SVG Blob */
+.header__blob {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.05;
+    width: 256px;
+    height: 256px;
+    transform: matrix(1, 0, 0, 1, -130, 300);
   }
 
   /* FEATURES*/
@@ -1396,6 +1420,7 @@ footer {
 
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */ 
+
 @media (max-width: 768px) {
 .section__para {
     font-size: 14px;
@@ -1419,6 +1444,7 @@ footer {
 
 
 /* FEATURES */
+
     #features .section__title {
         margin: 16px;
     }
@@ -1506,15 +1532,20 @@ footer {
 
 .values__list {
     max-width: 320px;
+    margin: 0 auto;
 }
 
-    .value {
+.value {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         
     }
+
+#values .section__tag {
+    margin-top: 48px;
+}
 }
 
 
