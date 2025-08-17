@@ -346,7 +346,7 @@ header {
   margin: 8px;
   height: calc(100% - 16px);
   border-radius: 500px;
-  width: 160px;
+  width: 40%;
   border: none;
   background-color: #6415ff;
   color: #fff;
@@ -1103,7 +1103,7 @@ position: relative;
 
 footer {
   background-color: #6415ff;
-  padding: 96px 32px;
+  padding: 80px 32px;
   margin-bottom: -32px;
   position: relative;
   overflow: hidden;
@@ -1139,7 +1139,7 @@ footer {
   height: 2px;
   width: 0%; /*start at 0 width */
   background: #fff;
-  transition: all 300ms;
+  transition: all 300ms ease;
 }
 
 .footer__column--link:hover::after {
@@ -1158,7 +1158,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   z-index: 2;
-  width: (100%/5);
+  width: calc(100%/5);
 }
 
 .footer__divider {
@@ -1211,13 +1211,22 @@ footer {
 .footer__bottom--socials {
   display: flex;
   z-index: 2;
+  color:#243e63;
 }
+
+.footer__social--link i {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+  }  
 
 .footer__bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 
 /* SVG Blob */
 .footer__blob--1 {
@@ -1242,7 +1251,7 @@ footer {
   z-index: 1;
 }
 
-/* LARGE DESKTOPS */
+/* LARGE DESKTOPS - 1280px Breakpoint */
 
 @media (max-width: 1280px) {
   .btn__menu {
@@ -1250,7 +1259,7 @@ footer {
   }
 }
 
-/* SMALL DESKTOPS */
+/* SMALL DESKTOPS -1024px Breakpoint */
 
 @media (max-width: 1024px) {
   h1 {
@@ -1410,14 +1419,13 @@ footer {
  text-align: center;
 }
 
-.start__buttons {
+.start__button {
+    padding: 16px, 32px;
     display: flex;
     justify-content: center;
     width: auto;
     margin-top: 24px;
-    padding: 15px 20px;
-}
-}
+}}
   
 
 
@@ -1477,6 +1485,7 @@ footer {
 
 .quality__description {
     margin-top: 48px;
+    margin-right: 0;
 
 }
 
@@ -1573,13 +1582,16 @@ footer {
 
 /* START */
 
+
+
 /* FOOTER */
 .footer__column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 2;
-    width: (100%/3);
+    width: calc(100%/3);
+    padding: 0 16px;
+  }
+
+  .footer__column--title {
+    margin-top: 24px;
   }
 
   .footer__bottom {
