@@ -1014,12 +1014,6 @@ button {
   background: #edf2f7;
 }
 
-@media (max-width: 1024px) {
-  .testimonials__img {
-    width: 41.6667%;
-  }
-}
-
 /* GET STARTED */
 
 #start .row {
@@ -1243,6 +1237,9 @@ footer {
   width: 16px;
   height: 16px;
   line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__bottom {
