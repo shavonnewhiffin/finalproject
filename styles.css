@@ -206,7 +206,7 @@ section {
   position: absolute;
   background-color: #fff;
   top: 0;
-  left: 0;
+  left: 10%;
   width: 80%;
   height: 378px;
   padding: 32px;
@@ -214,8 +214,8 @@ section {
   border: 1px solid rgb(229, 231, 235);
   border-radius: 8px;
   display: none;
-  transform: translateX(300%);
   transition: all 300ms ease;
+  z-index: 1000;
 }
 
 .btn__menu--close {
@@ -265,6 +265,8 @@ section {
   margin-top: 8px;
 }
 
+/* End Sandwich Menu */
+
 /* HEADER */
 
 header {
@@ -309,7 +311,7 @@ header {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+
 }
 
 .header__email--input {
@@ -347,7 +349,7 @@ header {
   margin: 8px;
   height: calc(100% - 16px);
   border-radius: 500px;
-  width: 40%;
+  width: 160px;
   border: none;
   background-color: #6415ff;
   color: #fff;
@@ -1128,6 +1130,12 @@ footer {
   overflow: hidden;
 }
 
+.footer__row {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
 .footer__column--title {
   font-weight: 700;
   color: #f7fafc;
@@ -1170,6 +1178,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   z-index: 2;
+  width: 100%;
 }
 
 .footer__column {
@@ -1177,7 +1186,8 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   z-index: 2;
-  width: calc(100% / 5);
+
+ 
 }
 
 .footer__divider {
@@ -1488,11 +1498,7 @@ footer {
   /* LANDING */
 
   .header__description--para {
-    padding: 20px 0;
-  }
-
-  .header__email--btn {
-    width: 160px;
+    margin: 20px 0;
   }
 
   .header__customers {
@@ -1669,6 +1675,10 @@ footer {
 
 @media (max-width: 640px) {
 
+.container {
+    padding: 80px 0;
+  }
+
 #features .section__title,
 #pricing .section__title {
   font-size: 36px;
@@ -1681,6 +1691,8 @@ footer {
 }
 
 /* LANDING  */
+
+
 .header__email {
   display: flex;
   flex-direction: column;
@@ -1798,7 +1810,8 @@ footer {
 
 .footer__column {
     display:flex;
-    align-items: center;;
+    align-items: center;
+    width: auto;
 }
 
 .footer__column--link {
