@@ -28,7 +28,7 @@ p {
 
 .row {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -166,7 +166,7 @@ section {
 }
 
 .nav__link--primary:hover {
-  color: rgba(80, 17, 204);
+  background-color: rgba(80, 17, 204);
 }
 
 .logo__img {
@@ -1014,6 +1014,7 @@ button {
   background: #edf2f7;
 }
 
+
 /* GET STARTED */
 
 #start .row {
@@ -1270,8 +1271,6 @@ footer {
   transform: translateX(128px) translateY(192px);
   z-index: 1;
 }
-
-  /* Removed duplicate .btn__menu definition */
 
 /* SMALL DESKTOPS -1024px Breakpoint */
 
@@ -1637,7 +1636,6 @@ footer {
   .testimonial__title {
     text-align: center;
   }
-}
 
 /* FOOTER */
 .footer__column {
@@ -1664,6 +1662,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
 }
 
 /* SMALL PHONES, LARGE SMARTPHONES - 640px Breakpoint */
