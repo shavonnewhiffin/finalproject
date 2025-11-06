@@ -1696,14 +1696,18 @@ footer {
 .header__email {
   display: flex;
   flex-direction: column;
+  margin: 62px;
 }
 
 .header__email--btn {
   width: 100%;
+ padding: 20px 192px 20px 32px;
+ text-align: center;
 }
 
 .header__email--input {
     width: 100%;
+    position: unset;
 }
 
 .header__customers {
@@ -1770,8 +1774,6 @@ footer {
 .testimonial__name, .testimonial__role {
     padding-left: 0;
 }
-
-
 
 .testimonial__buttons {
     margin-top: 32px;
