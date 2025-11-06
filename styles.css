@@ -1706,6 +1706,7 @@ footer {
  padding: 16px;
  line-height: 1.5;
  text-align: center;
+ margin-top: 16px;
 }
 
 .header__email--input {
